@@ -32,6 +32,10 @@ namespace Bakery.Models
         public Pastry(int pastryQuantity)
         {
             PastryQuantity = pastryQuantity;
+        }
+
+        public int PastryCost()
+        {
 
         }
     }

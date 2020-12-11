@@ -24,11 +24,24 @@ namespace Bakery.Tests
 
             Assert.AreEqual(breadCostTest, breadCost);
         }
+
         [TestMethod]
         public void PastryConstructor_CreatesInstanceOfPastry_Constructor()
         {
             Pastry newPastry = new Pastry(1);
             Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+        }
+
+        [TestMethod]
+        public void PastryCost_GetPastryPrice_Int()
+        {
+            int inputPastryQuantity = 3;
+            int pastryCostTest = 5;
+            Pastry newPastry = new Pastry(inputPastryQuantity);
+
+            int pastryCost = newPastry.PastryCost();
+
+            Assert.AreEqual(pastryCostTest, pastryCost);
         }
     }
 }
