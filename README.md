@@ -1,18 +1,17 @@
-# Application Name
+# Pierre's Bakery
 
 <div align="center">
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
 </div>
-<p align="center">Authored by Agata Kolodziej</p>
-<p align="center">Updated on: 10.Dec.2020</p>
+<p align="center">By Agata Kolodziej</p>
 
-#### Description of application, date-2020
+#### Test-Driven Development with C# Independent Project for Epicodus, 12-11-2020
 
 #### By Agata Kolodziej
 
 ## Description
 
-Purpose usage, detailed explanation what is does and any other information you want users and other developers to have
+Seventh independent project for Epicodus to demonstrate my understanding of C# basics, console applications and test-driven development. It is a console application that will prompt the user with a welcome message along with the cost for both Bread and Pastry offered at Pierre's Bakery. User will be able to specify how many loaves of bread and how many pastries they would like. The application will return the total cost of the order.
 
 ## Specifications
 
@@ -33,14 +32,9 @@ Purpose usage, detailed explanation what is does and any other information you w
 1. Internet browser
 2. A code editor such as VSCode to view and edit the code
 
-##### View Online
-
-- To view in browser click the GH-Pages link: [Name of App](URL)
-- what to do when open online
-
 ##### Open Locally
 
-- Click on the link to my repository: [My Repository](URL)
+- Click on the link to my repository: [My Repository](https://github.com/agatakolohe/PierresBakery.Solution.git)
 - Click on the green "Code" button and copy the repository URL
 - Open your terminal and use the command `git clone REPO URL HERE` into the directory you would like to clone the repository
 - Open in text editor to view code and make changes
