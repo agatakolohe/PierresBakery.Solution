@@ -3,14 +3,12 @@
 <div align="center">
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
 </div>
-
-#### Test-Driven Development with C# Independent Project for Epicodus, 12-11-2020
-
-#### By Agata Kolodziej
+<p align="center">Test-Driven Development with C# Independent Project for Epicodus, 12-11-2020</p>
+<p align="center"> By Agata Kolodziej</p>
 
 ## Description
 
-Seventh independent project for Epicodus to demonstrate my understanding of C# basics, console applications and test-driven development. It is a console application that will prompt the user with a welcome message along with the cost for both Bread and Pastry offered at Pierre's Bakery. User will be able to specify how many loaves of bread and how many pastries they would like. The application will return the total cost of the order.
+Seventh independent project for Epicodus to demonstrate my understanding of C# basics, console applications and test-driven development. It is a console application that will prompt the user with a welcome message along with the cost for both bread and pastry offered at Pierre's Bakery. User will be able to specify how many loaves of bread and how many pastries they would like. The application will return the total cost of the order.
 
 ## Specifications
 
