@@ -11,8 +11,16 @@ namespace Bakery.Models
         }
         public int BreadCost()
         {
-            int breadCost = BreadPrice * BreadQuantity;
-            return breadCost;
+            if (BreadQuantity % 3 == 0)
+            {
+                int breadCost = (BreadQuantity - (BreadQuantity / 3)) * BreadPrice;
+                return breadCost;
+            }
+            else
+            {
+                int breadCost = BreadPrice * BreadQuantity;
+                return breadCost;
+            }
         }
 
     }

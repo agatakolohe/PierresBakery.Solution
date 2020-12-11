@@ -14,7 +14,7 @@ namespace Bakery.Tests
         }
 
         [TestMethod]
-        public void BreadConstructor_GetBreadPrice_Int()
+        public void BreadCost_GetBreadPrice_Int()
         {
             int inputBreadQuatity = 1;
             int breadCostTest = 5;
