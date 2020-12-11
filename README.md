@@ -39,6 +39,7 @@ Seventh independent project for Epicodus to demonstrate my understanding of C# b
 
 1. Internet browser
 2. A code editor such as VSCode to view and edit the code
+3. .NET or follow along with the Installing .NET instructions to install .NET
 
 ##### Open Locally
 
@@ -47,10 +48,13 @@ Seventh independent project for Epicodus to demonstrate my understanding of C# b
 - Open your terminal and use the command `git clone REPO URL HERE` into the directory you would like to clone the repository
 - Open in text editor to view code and make changes
 
-##### Installing REPL
+##### Installing .NET
 
-- To install and use REPL open your terminal and use the command `dotnet tool install -g dotnet-script`
-- To exit REPL press Ctrl + C
+In order to run the application, please install .NET for your computer to recognize the `dotnet` command.
+
+1. Download [.NET Core SDK (Software Development Kit)](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.106-macos-x64-installer). Clicking this link will prompt a file download for your particular OS from Microsoft.
+2. Open the file. Follow the installation steps.
+3. Confirm the installation is successful by opening your terminal and running the command `dotnet --version`. The response should be something similar to this:`2.2.105`. This means it was successfully installed.
 
 ##### Installing Packages
 
@@ -62,7 +66,7 @@ Seventh independent project for Epicodus to demonstrate my understanding of C# b
 - Navigate to the Bakery folder in the command line
 - Use the command `dotnet build` to compile the code
 - Use the command `dotnet run` to execute the compiled code
-  - Enter the number of loaves and pasteries you would like to order
+  - Enter the number (int) of loaves and pasteries you would like to order
   - Enjoy the console application!
   - To exit press Ctrl + C
 
@@ -72,13 +76,14 @@ No known bugs
 
 ## Support and Contact Details
 
-If any errors or bugs occur delete both bin and obj folders and follow the installation instructions again. or please email me, <agatakolohe@gmail.com>
+If any errors or bugs occur with installation delete both bin and obj folders and follow the Installing Packages and Run Console Application instructions again. Get help or report a bug you have found in the .NET platform at [.NET Support](https://dotnet.microsoft.com/platform/support). Or please email me, <agatakolohe@gmail.com>.
 
 ## Technologies Used
 
 - C# 7.3
 - .NET Core 2.2
 - REPL
+- [ASCII Art Generator](https://www.ascii-art-generator.org/)
 - VS Code
 - GitHub
 
