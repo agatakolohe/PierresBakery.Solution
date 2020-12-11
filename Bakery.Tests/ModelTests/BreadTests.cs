@@ -4,7 +4,7 @@ using Bakery.Models;
 namespace Bakery.Tests
 {
     [TestClass]
-    public class OrderTests
+    public class BreadTests
     {
         [TestMethod]
         public void BreadConstructor_CreatesInstanceOfBread_Constructor()
@@ -23,25 +23,6 @@ namespace Bakery.Tests
             int breadCost = newBread.BreadCost();
 
             Assert.AreEqual(breadCostTest, breadCost);
-        }
-
-        [TestMethod]
-        public void PastryConstructor_CreatesInstanceOfPastry_Constructor()
-        {
-            Pastry newPastry = new Pastry(1);
-            Assert.AreEqual(typeof(Pastry), newPastry.GetType());
-        }
-
-        [TestMethod]
-        public void PastryCost_GetPastryPrice_Int()
-        {
-            int inputPastryQuantity = 2;
-            int pastryCostTest = 4;
-            Pastry newPastry = new Pastry(inputPastryQuantity);
-
-            int pastryCost = newPastry.PastryCost();
-
-            Assert.AreEqual(pastryCostTest, pastryCost);
         }
     }
 }
