@@ -29,7 +29,7 @@ namespace Bakery.Models
         public int PastryQuantity { get; set; }
         public int PastryPrice { get; set; } = 2;
 
-        public Pastry(int PastryQuantity)
+        public Pastry()
         {
 
         }
