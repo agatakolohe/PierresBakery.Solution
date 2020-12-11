@@ -24,15 +24,5 @@ namespace Bakery.Tests
 
             Assert.AreEqual(breadCostTest, breadCost);
         }
-        public void BreadDeal_BuyTwoGetOneFree_Int()
-        {
-            int inputBreadQuantity = 4;
-            int breadQuantityTest = 6;
-            Bread newBread = new Bread(inputBreadQuantity);
-
-            int breadDeal = newBread.BreadDeal();
-
-            Assert.AreEqual(breadQuantityTest, breadDeal);
-        }
     }
 }
