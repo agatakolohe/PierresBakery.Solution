@@ -4,10 +4,12 @@ namespace Bakery.Models
     {
         public int BreadQuantity { get; set; }
         public int BreadPrice { get; set; } = 5;
+        //public string BreadType { get; set; }
 
         public Bread(int breadQuantity)
         {
             BreadQuantity = breadQuantity;
+            //BreadType = breadType;
         }
         public int BreadCost()
         {
