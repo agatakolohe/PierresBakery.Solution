@@ -35,7 +35,7 @@ namespace Bakery.Tests
         [TestMethod]
         public void PastryCost_GetPastryPrice_Int()
         {
-            int inputPastryQuantity = 7;
+            int inputPastryQuantity = 2;
             int pastryCostTest = 4;
             Pastry newPastry = new Pastry(inputPastryQuantity);
 
