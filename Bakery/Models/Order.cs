@@ -24,4 +24,14 @@ namespace Bakery.Models
         }
 
     }
+    public class Pastry
+    {
+        public int PastryQuantity { get; set; }
+        public int PastryPrice { get; set; } = 2;
+
+        public Pastry(int PastryQuantity)
+        {
+
+        }
+    }
 }
