@@ -20,8 +20,9 @@ Seventh independent project for Epicodus to demonstrate my understanding of C# b
 
 ### Describe: functionName()
 
-| Test | Expect |
-| ---- | ------ |
+| Test                                                      | Expect          |
+| --------------------------------------------------------- | --------------- |
+| It will instantiate a bread object with bread constructor | public Bread(); |
 
 </details>
 
