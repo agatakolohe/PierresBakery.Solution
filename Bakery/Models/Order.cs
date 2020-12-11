@@ -3,6 +3,7 @@ namespace Bakery.Models
     public class Bread
     {
         public int BreadQuantity { get; set; }
+        public int BreadPrice { get; set; } = 5;
 
         public Bread(int breadQuantity)
         {
@@ -10,8 +11,7 @@ namespace Bakery.Models
         }
         public int BreadCost()
         {
-            int price = 5;
-            int breadCost = price * BreadQuantity;
+            int breadCost = BreadPrice * BreadQuantity;
             return breadCost;
         }
 
