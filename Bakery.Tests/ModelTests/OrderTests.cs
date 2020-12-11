@@ -16,13 +16,23 @@ namespace Bakery.Tests
         [TestMethod]
         public void BreadCost_GetBreadPrice_Int()
         {
-            int inputBreadQuatity = 3;
+            int inputBreadQuantity = 3;
             int breadCostTest = 10;
-            Bread newBread = new Bread(inputBreadQuatity);
+            Bread newBread = new Bread(inputBreadQuantity);
 
             int breadCost = newBread.BreadCost();
 
             Assert.AreEqual(breadCostTest, breadCost);
+        }
+        public void BreadDeal_BuyTwoGetOneFree_Int()
+        {
+            int inputBreadQuantity = 4;
+            int breadQuantityTest = 6;
+            Bread newBread = new Bread(inputBreadQuantity);
+
+            int breadDeal = newBread.BreadDeal();
+
+            Assert.AreEqual(breadQuantityTest, breadDeal);
         }
     }
 }
