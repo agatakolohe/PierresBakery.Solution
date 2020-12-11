@@ -3,7 +3,6 @@
 <div align="center">
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
 </div>
-<p align="center">By Agata Kolodziej</p>
 
 #### Test-Driven Development with C# Independent Project for Epicodus, 12-11-2020
 

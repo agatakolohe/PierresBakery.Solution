@@ -18,8 +18,8 @@ namespace Bakery.Models
             }
             else
             {
-                int breadCost = BreadPrice * BreadQuantity;
-                return breadCost;
+                return BreadPrice * BreadQuantity;
+
             }
         }
 
@@ -36,6 +36,20 @@ namespace Bakery.Models
 
         public int PastryCost()
         {
+            if (PastryQuantity % 3 == 0)
+            {
+                int pastryCost = (PastryQuantity / 3) * 5;
+                return pastryCost;
+            }
+            else if (PastryQuantity % 3 > 0 && PastryQuantity > 3)
+            {
+                int pastryCost = ((PastryQuantity / 3) * 5) + ((PastryQuantity % 3) * 2);
+                return pastryCost;
+            }
+            else
+            {
+                return PastryQuantity * PastryPrice;
+            }
 
         }
     }
