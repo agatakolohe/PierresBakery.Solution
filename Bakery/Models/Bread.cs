@@ -4,12 +4,12 @@ namespace Bakery.Models
     {
         public int BreadQuantity { get; set; }
         public int BreadPrice { get; set; } = 5;
-        public string BreadKind { get; set; }
+        public string BreadType { get; set; }
 
-        public Bread(int breadQuantity, string breadKind)
+        public Bread(int breadQuantity, string breadType)
         {
             BreadQuantity = breadQuantity;
-            BreadKind = breadKind;
+            BreadType = breadType;
         }
         public int BreadCost()
         {
@@ -23,19 +23,18 @@ namespace Bakery.Models
                 return BreadPrice * BreadQuantity;
             }
         }
-        public string BreadType()
+        public string GetBreadType()
         {
-            bool pumpernickle = BreadKind == "pumpernickle";
-            string sourDough = "sourdough";
-            if (pumpernickle)
+            if (BreadType == "rye")
             {
-                return BreadKind;
+                string rye = "rye";
+                return rye;
             }
             else
             {
-                return sourDough;
+                return "nothing";
             }
-        }
 
+        }
     }
 }

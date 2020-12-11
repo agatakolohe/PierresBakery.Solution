@@ -9,7 +9,7 @@ namespace Bakery.Tests
         [TestMethod]
         public void BreadConstructor_CreatesInstanceOfBread_Constructor()
         {
-            Bread newBread = new Bread(1, "sourdough");
+            Bread newBread = new Bread(1, "rye");
             Assert.AreEqual(typeof(Bread), newBread.GetType());
         }
 
@@ -17,36 +17,25 @@ namespace Bakery.Tests
         public void BreadCost_GetBreadPrice_Int()
         {
             int inputBreadQuantity = 3;
-            string inputBreadKind = "sourdough";
             int breadCostTest = 10;
-            Bread newBread = new Bread(inputBreadQuantity, inputBreadKind);
+            Bread newBread = new Bread(inputBreadQuantity, "rye");
 
             int breadCost = newBread.BreadCost();
 
             Assert.AreEqual(breadCostTest, breadCost);
         }
         [TestMethod]
-        public void BreadCost_GetBreadPrice_Int()
+
+        public void BreadType_GetBreadType_String()
         {
-            int inputBreadQuantity = 3;
-            string inputBreadKind = "sourdough";
-            int breadCostTest = 10;
-            Bread newBread = new Bread(inputBreadQuantity, inputBreadKind);
+            string inputBreadType = "rye";
+            Bread newBread = new Bread(2, inputBreadType);
 
-            int breadCost = newBread.BreadCost();
+            string breadKind = newBread.GetBreadType();
 
-            Assert.AreEqual(breadCostTest, breadCost);
+            Assert.AreEqual(inputBreadType, breadKind);
+
         }
-        [TestMethod]
-        public void BreadType_GetBreadType_False()
-        {
-            int inputBreadQuantity = 3;
-            string inputBreadKind = "sourdough";
-            Bread newBread = new Bread(inputBreadQuantity, inputBreadKind);
 
-            int breadType = newBread.BreadType();
-
-            Assert.AreEqual(false, breadType);
-        }
     }
 }
