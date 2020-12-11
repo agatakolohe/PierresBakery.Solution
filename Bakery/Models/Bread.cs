@@ -23,18 +23,5 @@ namespace Bakery.Models
                 return BreadPrice * BreadQuantity;
             }
         }
-        public string GetBreadType()
-        {
-            if (BreadType == "rye")
-            {
-                string rye = "rye";
-                return rye;
-            }
-            else
-            {
-                return "nothing";
-            }
-
-        }
     }
 }
