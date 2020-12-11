@@ -19,7 +19,7 @@ namespace Bakery.Models
             }
             else if (PastryQuantity % 3 > 0 && PastryQuantity > 3)
             {
-                int pastryCost = ((PastryQuantity / 3) * 5) + ((PastryQuantity % 3) * 2);
+                int pastryCost = ((PastryQuantity / 3) * 5) + ((PastryQuantity % 3) * PastryPrice);
                 return pastryCost;
             }
             else
