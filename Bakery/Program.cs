@@ -19,7 +19,7 @@ namespace Bakery
 ";
 
             Console.WriteLine(title);
-            Console.WriteLine("Welcome to Pierre's Bakery!\n" + "Bread and pasteries baked fresh daily!\n" + "PRICES:\n" + "* Single loaf of bread: $5\n" + "* One pastry: $2\n" + "Our deals today include:\n" + "** BREAD: Buy 2, get 1 free.\n" + "** PASTRY: 3 for $5.\n" + "What kind of bread would you like?\n" + "Pumpernickle\n" + "Sour Dough\n" + "Rye\n" + "Ciabatta");
+            Console.WriteLine("Welcome to Pierre's Bakery!\n" + "------------------------------\n" + "Bread and pasteries baked fresh daily!\n" + "------------------------------\n" + "PRICES:\n" + "------------------------------\n" + "* Single loaf of bread: $5\n" + "* One pastry: $2\n" + "------------------------------\n" + "DEALS:\n" + "------------------------------\n" + "** BREAD: Buy 2, get 1 free.\n" + "** PASTRY: 3 for $5.\n" + "------------------------------\n" + "What kind of bread would you like?\n" + "Pumpernickle\n" + "Sour Dough\n" + "Rye\n" + "Ciabatta");
             string breadType = Console.ReadLine();
             Console.WriteLine("Enter the number of loaves of bread you would like.");
             int breadQuantity = int.Parse(Console.ReadLine());
@@ -28,7 +28,7 @@ namespace Bakery
             Bread userBread = new Bread(breadQuantity, breadType);
             Pastry userPastry = new Pastry(pastryQuantity);
             int totalCost = userBread.BreadCost() + userPastry.PastryCost();
-            Console.WriteLine("*** Receipt ***\n" + "BREAD:\n" + breadQuantity + " loaves of " + breadType + " bread\n" + "PASTRY:\n" + pastryQuantity + " pasteries\n" + "** TOTAL **\n" + "$" + totalCost + "\n Thank you for ordering from Pierre's Bakery! Enjoy your baked goodies!");
+            Console.WriteLine("*** Receipt ***\n" + "------------------------------\n" + "BREAD:\n" + "------------------------------\n" + breadQuantity + " loaves of " + breadType + " bread\n" + "------------------------------\n" + "PASTRY:\n" + "------------------------------\n" + pastryQuantity + " pasteries\n" + "------------------------------\n" + "** TOTAL **\n" + "------------------------------\n" + "$" + totalCost + "\nThank you for ordering from Pierre's Bakery! Enjoy your baked goodies!");
             string bonAppetit = @" ____                                          _   _ _   _ 
 |  _ \                  /\                    | | (_) | | |
 | |_) | ___  _ __      /  \   _ __  _ __   ___| |_ _| |_| |
