@@ -17,6 +17,15 @@ namespace Bakery
                                                                __/ |
                                                               |___/ 
 ";
+            string bonAppetit = @" ____                                          _   _ _   _ 
+|  _ \                  /\                    | | (_) | | |
+| |_) | ___  _ __      /  \   _ __  _ __   ___| |_ _| |_| |
+|  _ < / _ \| '_ \    / /\ \ | '_ \| '_ \ / _ \ __| | __| |
+| |_) | (_) | | | |  / ____ \| |_) | |_) |  __/ |_| | |_|_|
+|____/ \___/|_| |_| /_/    \_\ .__/| .__/ \___|\__|_|\__(_)
+                             | |   | |                     
+                             |_|   |_|                     
+";
 
             Console.WriteLine(title);
             Console.WriteLine("Welcome to Pierre's Bakery!\n" + "------------------------------\n" + "Bread and pasteries baked fresh daily!\n" + "------------------------------\n" + "PRICES:\n" + "------------------------------\n" + "* Single loaf of bread: $5\n" + "* One pastry: $2\n" + "------------------------------\n" + "DEALS:\n" + "------------------------------\n" + "** BREAD: Buy 2, get 1 free.\n" + "** PASTRY: 3 for $5.\n" + "------------------------------\n" + "What kind of bread would you like?\n" + "Pumpernickle\n" + "Sour Dough\n" + "Rye\n" + "Ciabatta");
@@ -29,17 +38,16 @@ namespace Bakery
             Pastry userPastry = new Pastry(pastryQuantity);
             int totalCost = userBread.BreadCost() + userPastry.PastryCost();
             Console.WriteLine("*** Receipt ***\n" + "------------------------------\n" + "BREAD:\n" + "------------------------------\n" + breadQuantity + " loaves of " + breadType + " bread\n" + "------------------------------\n" + "PASTRY:\n" + "------------------------------\n" + pastryQuantity + " pasteries\n" + "------------------------------\n" + "** TOTAL **\n" + "------------------------------\n" + "$" + totalCost + "\nThank you for ordering from Pierre's Bakery! Enjoy your baked goodies!");
-            string bonAppetit = @" ____                                          _   _ _   _ 
-|  _ \                  /\                    | | (_) | | |
-| |_) | ___  _ __      /  \   _ __  _ __   ___| |_ _| |_| |
-|  _ < / _ \| '_ \    / /\ \ | '_ \| '_ \ / _ \ __| | __| |
-| |_) | (_) | | | |  / ____ \| |_) | |_) |  __/ |_| | |_|_|
-|____/ \___/|_| |_| /_/    \_\ .__/| .__/ \___|\__|_|\__(_)
-                             | |   | |                     
-                             |_|   |_|                     
-";
-            Console.WriteLine(bonAppetit);
-
+            Console.WriteLine("Would you like to order again? ['Y' for yes, 'Enter' for no]");
+            string userResponse = Console.ReadLine();
+            if (userResponse == "y" || userResponse == "Y")
+            {
+                Main();
+            }
+            else
+            {
+                Console.WriteLine(bonAppetit);
+            }
         }
     }
 }
