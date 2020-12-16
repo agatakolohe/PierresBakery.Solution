@@ -18,7 +18,7 @@ namespace Bakery.Tests
         {
             int inputBreadQuantity = 1;
             string inputBreadType = "rye";
-            int breadCostTest = 6;
+            int breadCostTest = 5;
             Bread newBread = new Bread(inputBreadQuantity, inputBreadType);
 
             int breadCost = newBread.BreadCost();
