@@ -74,6 +74,7 @@ In order to run the application, please install .NET for your computer to recogn
 ##### Run Tests
 
 - Navigate to Bakery.Tests folder in the command line
+- Use the commands `dotnet build` and `dotnet restore` to make sure code is compiled and packages are installed
 - Use the command `dotnet test` to run tests on all test methods
   - Total tests: 7
 
