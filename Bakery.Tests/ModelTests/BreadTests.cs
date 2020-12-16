@@ -28,7 +28,7 @@ namespace Bakery.Tests
         [TestMethod]
         public void BreadCost_GetBreadDealPrice_Int()
         {
-            int inputBreadQuantity = 6;
+            int inputBreadQuantity = 3;
             string inputBreadType = "rye";
             int breadCostTest = 10;
             Bread newBread = new Bread(inputBreadQuantity, inputBreadType);
