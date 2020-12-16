@@ -17,10 +17,11 @@ Seventh independent project for Epicodus to demonstrate my understanding of C# b
 
 ### Describe: Bread()
 
-| Test                                                      | Expect                                             |
-| --------------------------------------------------------- | -------------------------------------------------- |
-| It will instantiate a Bread object with Bread constructor | public Bread(int breadQuantity);                   |
-| It will calculate bread cost                              | BreadCost(Single loaf for $5 or Buy 2 get 1 free); |
+| Test                                                      | Expect                           |
+| --------------------------------------------------------- | -------------------------------- |
+| It will instantiate a Bread object with Bread constructor | public Bread(int breadQuantity); |
+| It will calculate bread cost. A single loaf is $5         | BreadCost(1 loaf).ToEqual(5);    |
+| It will calculate bread deal cost. Buy 2 get 1 free       | BreadCost(3 loaves).ToEqual(10); |
 
 ### Describe: Pastry()
 
