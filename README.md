@@ -25,10 +25,12 @@ Seventh independent project for Epicodus to demonstrate my understanding of C# b
 
 ### Describe: Pastry()
 
-| Test                                                        | Expect                             |
-| ----------------------------------------------------------- | ---------------------------------- |
-| It will instantiate a Pastry object with Pastry constructor | public Pastry(int pastryQuantity); |
-| It will calculate pastry cost                               | PastryCost(1 for $2 or 3 for $5);  |
+| Test                                                          | Expect                              |
+| ------------------------------------------------------------- | ----------------------------------- |
+| It will instantiate a Pastry object with Pastry constructor   | public Pastry(int pastryQuantity);  |
+| It will calculate pastry cost. One pastry is $2               | PastryCost(1 pastry).ToEqual(2);    |
+| It will calculate pastry deal cost. 3 for $5                  | PastryCost(3 pastries).ToEqual(5);  |
+| It will calculate pastry cost with deal. 1 for $2 and3 for $5 | PastryCost(7 pastries).ToEqual(12); |
 
 </details>
 
