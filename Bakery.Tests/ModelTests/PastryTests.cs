@@ -16,6 +16,17 @@ namespace Bakery.Tests
         [TestMethod]
         public void PastryCost_GetPastryPrice_Int()
         {
+            int inputPastryQuantity = 1;
+            int pastryCostTest = 12;
+            Pastry newPastry = new Pastry(inputPastryQuantity);
+
+            int pastryCost = newPastry.PastryCost();
+
+            Assert.AreEqual(pastryCostTest, pastryCost);
+        }
+        [TestMethod]
+        public void PastryCost_GetPastryDealPrice_Int()
+        {
             int inputPastryQuantity = 7;
             int pastryCostTest = 12;
             Pastry newPastry = new Pastry(inputPastryQuantity);
