@@ -67,9 +67,15 @@ In order to run the application, please install .NET for your computer to recogn
 - Navigate to the Bakery folder in the command line
 - Use the command `dotnet build` to compile the code
 - Use the command `dotnet run` to execute the compiled code
-  - Enter the type of bread, number (int) of loaves and pasteries you would like to order
+  - Enter the type of bread, number (int) of loaves, and pasteries you would like to order
   - Enjoy the console application!
   - To exit press Ctrl + C
+
+##### Run Tests
+
+- Navigate to Bakery.Tests folder in the command line
+- Use the command `dotnet test` to run tests on all test methods
+  - Total tests: 7
 
 ## Known Bugs
 
