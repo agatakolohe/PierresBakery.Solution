@@ -28,7 +28,7 @@ namespace Bakery.Tests
         public void PastryCost_GetPastryDealPrice_Int()
         {
             int inputPastryQuantity = 3;
-            int pastryCostTest = 12;
+            int pastryCostTest = 5;
             Pastry newPastry = new Pastry(inputPastryQuantity);
 
             int pastryCost = newPastry.PastryCost();
